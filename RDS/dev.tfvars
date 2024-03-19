@@ -6,8 +6,8 @@ instance_class      = "db.t3.small"
 database_name       = "wordpress_db"
 master_username     = "dbuser"
 number_of_instances = 3
-domain_name         = "ysakova.com"
-zone_id             = "Z03752632UEAH78FQT19U"
+domain_name         = "minbaev.com"
+zone_id             = "Z00185081ZZ933ULI7PC7"
 tags = {
 
   Name      = "Terraform-project"

@@ -48,3 +48,21 @@ variable "private_subnet3" {
   type        = string
   default     = ""
 }
+
+variable "az1" {
+  description = "Please provide cidr block for subnet1"
+  type        = string
+  default     = ""
+}
+
+variable "az2" {
+  description = "Please provide cidr block for subnet1"
+  type        = string
+  default     = ""
+}
+
+variable "az3" {
+  description = "Please provide cidr block for subnet1"
+  type        = string
+  default     = ""
+}

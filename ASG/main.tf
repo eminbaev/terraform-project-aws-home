@@ -1,7 +1,7 @@
 data "terraform_remote_state" "backend" {
   backend = "s3"
    config  = {
-    bucket = "team1-aws-storage"
+    bucket = "terraformstatebucket302"
     key = "vpc-statefile"
     region = "us-east-1"
   }
