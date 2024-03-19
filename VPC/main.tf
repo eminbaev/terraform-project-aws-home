@@ -1,9 +1,8 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
-
+  
   name = "main"
   cidr = var.cidr
-
   azs             = var.azs
   private_subnets = var.private_subnets
   public_subnets  = var.public_subnets
@@ -13,7 +12,6 @@ module "vpc" {
   tags = var.tags
 
 }
-
 
 # Attach Internet Gateway to Public Subnets
 resource "aws_route_table" "public_route_table" {
