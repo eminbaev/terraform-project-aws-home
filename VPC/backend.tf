@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "team1-aws-storage"
+    bucket = "terraformstatebucket302"
     key    = "vpc-statefile"
     region = "us-east-1"
   }
