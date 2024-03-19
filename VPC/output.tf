@@ -1,21 +1,41 @@
+# VPC ID
 output "vpc_id" {
-  value = aws_vpc.main.id
+  description = "The ID of the VPC"
+  value       = module.vpc.vpc_id
 }
-output "public_subnet1" {
-  value = aws_subnet.public_subnet1.id
+
+# VPC CIDR blocks
+output "vpc_cidr_block" {
+  description = "The CIDR block of the VPC"
+  value       = module.vpc.vpc_cidr_block
 }
-output "public_subnet2" {
-  value = aws_subnet.public_subnet2.id
+
+# VPC Private Subnets
+output "private_subnets" {
+  description = "A list of private subnets inside the VPC"
+  value       = module.vpc.private_subnets
 }
-output "public_subnet3" {
-  value = aws_subnet.public_subnet3.id
+
+# VPC Public Subnets
+output "public_subnets" {
+  description = "A list of public subnets inside the VPC"
+  value       = module.vpc.public_subnets
 }
-output "private_subnet1" {
-  value = aws_subnet.public_subnet1.id
+
+# VPC NAT gateway Public IP
+output "nat_public_ips" {
+  description = "List of public Elastic IPs created for AWS NAT Gateway"
+  value       = module.vpc.nat_public_ips
 }
-output "private_subnet2" {
-  value = aws_subnet.public_subnet2.id
+
+# VPC Internet gateway ID
+output "igw_id" {
+  description = "List of public Elastic IPs created for AWS NAT Gateway"
+  value       = module.vpc.igw_id
 }
-output "private_subnet3" {
-  value = aws_subnet.public_subnet3.id
+
+# VPC AZs
+output "azs" {
+  description = "A list of availability zones specified as argument to this module"
+  value       = module.vpc.azs
 }
